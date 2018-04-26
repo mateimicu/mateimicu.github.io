@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 echo "Deleting old publication"
 
+CNAME="slides.mateimicu.com"
+
 echo "get the themes"
 git submodule update
 
@@ -19,4 +21,4 @@ echo "Copy the static files"
 cp -r /tmp/hugo-public/* .
 
 echo "Add CNAME reference for gh-pages"
-echo "slides.mateimicu.com" >> CNAME
+echo "$CNAME" >> CNAME
