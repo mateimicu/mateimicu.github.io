@@ -19,4 +19,4 @@ echo "Copy the static files"
 cp -r /tmp/hugo-public/* .
 
 echo "Add CNAME reference for gh-pages"
-echo "mateimicu.com" >> CNAME
+echo "slides.mateimicu.com" >> CNAME
